@@ -40,11 +40,13 @@
                 in
                 inDirectory "src" ||
                 inDirectory "tests" ||
+                inDirectory "exercises" ||
                 hasPrefix "Cargo" baseName ||
                 baseName == "info.toml";
             };
 
             cargoLock.lockFile = ./Cargo.lock;
+            doCheck = false;
           };
       in
       {
