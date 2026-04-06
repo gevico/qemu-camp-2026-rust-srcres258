@@ -59,7 +59,7 @@
             rust-analyzer
             rustlings
             rustfmt
-            clippy
+            rust.packages.stable.clippy
           ] ++ cargoBuildInputs;
         };
       });
